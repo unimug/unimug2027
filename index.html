@@ -772,6 +772,20 @@
             line-height: 1.5;
         }
 
+        .guideline-item.guideline-wide { grid-column: 1 / -1; }
+
+        .guideline-content .track {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .guideline-content .track:first-of-type { margin-top: 0; }
+
+        .guideline-content .track-name {
+            color: var(--text);
+            font-weight: 600;
+        }
+
         /* ── Sponsors ── */
         .sponsors-grid {
             display: flex;
@@ -1374,13 +1388,14 @@
             <p class="section-desc">Instructions for preparing and submitting your paper.</p>
         </div>
         <div class="guidelines-grid">
-            <div class="guideline-item">
+            <div class="guideline-item guideline-wide">
                 <div class="guideline-icon">
                     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                 </div>
                 <div class="guideline-content">
                     <strong>Format</strong>
-                    <span>WACV conference style, maximum 14 pages (excluding references)</span>
+                    <span class="track"><span class="track-name">Full Papers (Archival):</span> Full papers should present complete, original research relevant to the workshop. Submissions must not exceed 8 pages, including figures and tables but excluding references. Accepted full papers will appear in the official conference proceedings.</span>
+                    <span class="track"><span class="track-name">Short Papers (Non-archival):</span> Short papers provide an opportunity to present research in progress or novel perspectives on topics relevant to the workshop. Submissions must not exceed 4 pages, including figures and tables but excluding references. Accepted short papers will not appear in the official conference proceedings.</span>
                 </div>
             </div>
             <div class="guideline-item">
